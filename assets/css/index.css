@@ -1,0 +1,165 @@
+/* Color Scheme
+Flush Orange - #FF7400      RGB(255, 116, 0)
+Violent Violet - #320D6D    RGB(50, 13, 109)
+Wild Blue Yonder - #7578BA  RGB(117, 120, 186)
+White - #FFFFFF             RGB(255, 255, 255)
+Black Pearl - #04141F       RGB(4, 20, 31)
+*/
+
+*{
+    box-sizing: border-box;
+}
+html{
+    color: #04141f;
+    font-size: 62.5%;
+    min-width: 1000;
+}
+body{
+    
+    font-size: 1.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.page_header{
+   background: #FFFFFF;
+  
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   
+}
+.site_logo{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+
+}
+.site_logo h1 {
+    font-size: 4rem;
+    padding: 0 2%;
+}
+.navlinks{
+   width: 100%;
+   background: #04141f;
+    
+}
+.login_btns { 
+    display: flex;
+    border: 1px solid #04141f;
+    width: 25%;
+    height: 20%;
+    
+   
+}
+.login_btns p{
+    width: 70%;
+}
+.login_btns .buttons {
+    width: 30%;
+    padding-top: 10px 1% 0 1%;
+    margin-left:2%;
+    margin-right: 2%;
+}
+.site_nav{
+     padding-top: 10px;
+    margin: 0 auto;
+}
+site_nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+    
+.site_nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid #04141f;
+    color: #7578BA;
+    
+}
+.site_nav ul li:hover {
+    background: #7578BA;
+    color: #04141f;
+   
+}
+.site_nav li a{
+    text-decoration:none;
+}
+
+.buttons {
+    border: 1px solid #04141f;
+    background: #04141f;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 15%;
+    margin: 10px 5%;
+    text-align: center;
+    vertical-align: center;
+}
+
+.page_content{
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 120, 0, 0.7), #FFFFFF);
+    display: flex;
+    flex-direction: column;
+}
+
+.top_sct{
+    display: flex;
+    flex-direction: column;
+}
+
+.pageImg { width: 100%;}
+
+.top_content{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.middle_sct {
+   
+}
+.middle_content {
+    width:85%;
+    display: flex;
+    margin: 20px auto;
+}
+.boxes {
+    border: 2px solid #320d6d;
+    border-radius: 5%;
+    box-shadow: 5px 10px 8px #04141f, 5px 10px 8px #04141f;
+    width: 30%;
+    margin: 0 2%;
+    background: #FFFFFF;
+}
+.bottom_sct {
+    
+    background: #7578BA;
+}
+.bottom_content{
+    width: 75%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.bottom_content boxes {
+    background: #FFFFFF;
+}
+.bottom_content boxes p{
+    border-top: 2px solid #320d6d;
+}
+
+
+.page_footer {
+    border-top: 2px solid #FF7400;
+    background: #FFFFFF;
+    text-align: center;
+    color: #04141f;
+    padding-top: 20px;
+
+}  
