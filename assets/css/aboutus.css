@@ -1,0 +1,54 @@
+.page_content {
+    display: flex;
+}
+.sidebar {
+    background: #320D6D;
+    width: 20%;
+}
+.sidebar ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+.sidebar ul li {
+    border: 1px solid #04141F;
+    padding: 5%;
+    text-align: center;
+}
+.sidebar ul li:hover {
+    color: #320D6D;
+    background: #7578BA;
+}
+.sidebar ul li a{
+    color: #04141F;
+    text-decoration: none;
+}
+
+.page_content{
+    flex-direction: row;
+    
+    
+}
+.main_content{
+    padding-left: 3%;
+    width: 75%;
+}
+.team {
+    width: 85%;
+    
+}
+
+.rows {
+    display: flex;
+    margin: 20px 0;
+}
+
+.boxes.photo {
+    width: 20%;
+}
+
+.boxes.description {
+    width: 75%;
+}

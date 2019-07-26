@@ -1,8 +1,6 @@
-const mainPageImgs = ["assets/img/mother2.png", "assets/img/beautifulchild.jpg"];
-const countries = ['Bolivia',  'Brazil', 'Cambodia', 'Colombia', 'Ecuador', 'El Salvador', 
-                   'Ghana', 'Guatemala', 'Haiti', 'Honduras', 'Kiribati, ''Madagascar', 'Mongolia',
-                    'Nicaragua', 'Paraguay', 'Peru', 'Philippines', 'Sierra Leone', 'Zimbabwe'];
-
+const missionStatement = "";
+const visionStatement = "";
+const ourStory = "";
 class Person {
     constructor(attrs) {
         this.fName = attrs.fName;
