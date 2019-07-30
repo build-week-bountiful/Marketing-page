@@ -13,7 +13,6 @@ Black Pearl - #04141F       RGB(4, 20, 31)
 html{
     color: #04141f;
     font-size: 62.5%;
-    min-width: 1000;
     font-family: Roboto, Arial, sans-serif;
 }
 body{
@@ -25,6 +24,29 @@ h1 {
     font-size: 3rem;
     font-weight: 600;
 }
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+.buttons {
+    border: 1px solid #04141f;
+    background: #04141f;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 5%;
+    margin: 10px 5%;
+    text-align: center;
+    padding: 2%;
+    
+}
+.buttons:hover {
+    background: #320d6d;
+    color: #7578BA;
+}
+
 .page_header{
    background: #FFFFFF;
    width: 100%;
@@ -32,12 +54,22 @@ h1 {
    flex-direction: column;
    
 }
+
 .site_logo{
     width: inherit;
     display:flex;
     justify-content: space-between;
 
 }
+
+@media only screen and (max-width:800px){
+    .site_logo {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
 .site_logo h1 {
     font-size: 4rem;
     padding: 0 2%;
@@ -46,26 +78,66 @@ h1 {
     font-weight: 800;
     color:  #FF7400;
 }
+@media only screen and (max-width: 800px){
+    .site_logo h1 {
+        text-align: center;
+    }
+}
 
 .login_btns { 
     display: flex;
-    border: 1px solid #04141f;
-    width: 25%;
-    height: 20%;
+    border: 2px solid #FF7400;
+    background: #FFFFFF;
+    width: 40%;
+    height: 65%;
+ }
+ @media only screen and (max-width: 800px) {
+     .login_btns{
+         width: 75%;
+
+     }
+ }
+ @media only screen and (max-width: 500px){
+     .login_btns {
+         width: 75%;
+      }
  }
 .login_btns p{
     padding-left: 1%;
     width: 70%;
+    color: #FF7400;
+    font-weight: 600;
+}
+@media only screen and (max-width: 500px){
+    .login_btns p{
+        padding:0;
+        width: 70%;
+        
+    }
 }
 .login_btns .buttons {
     width: 30%;
-    padding-top: 10px 1% 0 1%;
-    margin-left:2%;
-    margin-right: 2%;
+    padding: 2%;
+    margin: 10px 2%;
+    color: #FF7400;
+    background-color: #FFFFFF;
+    border: 2px solid #FF7400;
+}
+
+.login_btns .buttons:hover{
+    color: #FFFFFF;
+    background: #FF7400;
+}
+
+@media only screen and (max-width: 500px) {
+    .login_btns .buttons {
+        width: 30%;
+        
+    }
 }
 
 .site_nav{
-    padding-top: 10px;
+    
     width: inherit;
     background: #04141f;
     margin: 0;
@@ -74,12 +146,34 @@ h1 {
 .site_nav div {
     width: 60%;
 }
+
+
+@media only screen and (max-width: 800px) {
+    .site_nav div {
+        display: none;
+    }
+}
 .site_nav ul {
     display: flex;
     width: 40%;
     justify-content: space-evenly;
+    padding: 1%;
     list-style-type: none;
+}
+@media only screen and (min-width:501px) and (max-width:800px){
+    .site_nav ul {
+        width:85%;
+        justify-content: space-around;
+    }
+}
 
+@media only screen and (max-width: 500px) {
+    .site_nav ul {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        
+    }
 }
     
 .site_nav ul li{
@@ -87,32 +181,33 @@ h1 {
      text-align: center;
     
 }
-/*
-.site_nav ul li:hover {
-    background: #7578BA;
-    color: #04141f;
-   
+@media only screen and (max-width: 500px){
+    .site_nav ul li{
+        width: 100%;
+        padding: 2%
+    }
 }
-*/
+
+.site_nav ul li:hover {
+    color: #320d6d;
+}   
+@media only screen and (max-width: 500px) {
+    .site_nav ul li:hover {
+        background: #7578BA;
+    }
+}
+
 .site_nav ul li a{
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.buttons {
-    border: 1px solid #04141f;
-    background: #04141f;
-    color: #FFFFFF;
-    width: 100%;
-    border-radius: 15%;
-    margin: 10px 5%;
-    text-align: center;
-    vertical-align: center;
+.site_nav ul li a:hover {
+    color: #FF7400;
 }
-.buttons:hover {
-    background: #320d6d;
-    color: #7578BA;
-}
+
+
+
 
 .page_content{
     width: 100%;
@@ -142,6 +237,12 @@ h1 {
     display: flex;
     margin: 20px auto;
 }
+@media only screen and (max-width: 500px){
+    .middle_content {
+        width: 100%;
+        flex-direction: column;
+    }
+}
 .boxes {
     border: 2px solid #320d6d;
     border-radius: 5%;
@@ -149,6 +250,12 @@ h1 {
     width: 30%;
     margin: 0 2%;
     background: #FFFFFF;
+}
+@media only screen and (max-width: 500px) {
+    .boxes {
+        width: 85%;
+        margin: 20px auto;
+    }
 }
 .bottom_sct {
     
@@ -161,6 +268,13 @@ h1 {
     justify-content: center;
 }
 
+@media only screen and (max-width: 500px){
+    .bottom_content {
+       width: 100%;
+       flex-direction: column;
+    }
+}
+
 .bottom_content boxes {
     background: #FFFFFF;
 }
@@ -168,13 +282,96 @@ h1 {
     border-top: 2px solid #320d6d;
 }
 
-
 .page_footer {
     border-top: 2px solid #FF7400;
     background: #FFFFFF;
     text-align: center;
     color: #04141f;
+    display: flex;
+    flex-direction: column;
     padding-top: 20px;
+}
+@media only screen and (max-width: 800px){
+    .page_footer{
+        padding-top: 0;
+    }
+}
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    width:100%;
+}
+@media only screen and (max-width: 800px) {
+    .footer_content{
+        flex-direction: column;
+
+    }
+}
+.siteMap {
+    width: 30%;
+}
+@media only screen and (max-width: 800px){
+    .siteMap {
+        width: 100%;
+    }
+}
+.siteMap ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 2%;
+}
+.siteMap ul li {
+    padding: 1%;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:800px){
+    .siteMap ul li {
+        padding: 2%;
+        border-bottom: 1px solid #FFBFBD;
+    }
+    
+}
+.siteMap a{
+    text-decoration: none;
+    color: #320d6d;
+}
+
+.siteMap a:hover {
+    color: #FF7400;
+}
+
+.buttons.backToTop {
+    text-decoration: none;
+    border: 2px solid #FF7400;
+    background: transparent;
+    color: #FF7400;
+    height:20%;
+    padding: 3%;
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    .buttons.backToTop{
+        display: initial;
+        width: 35%;
+        margin: 0 auto;
+    }
+}
+.buttons.backToTop:hover{
+    background: #FF7400;
+    color: #FFFFFF;
+}
+.contactInfo {
+    line-height: 1;
+}
+
+.contactInfo a {
+    text-decoration: none;
+    color: #320d6d;
+}
+.page_footer .copyright{
+    
     font-size: 1rem;
 
 }  
+
