@@ -33,17 +33,18 @@
         
     </header>
     <main class="page_content">
+        <div id="top"></div>
         <section class="top_sct">
             <img src="./assets/img/mother2.png" alt="Page main picture" class="pageImg"/>
             <div class="top_content">
-                <article>
+                <article class="page_articles">
                     <header>
                         <hgroup>
-                            <h1>Beyond Prayers</h1>
-                            <h3>Date: </h3>
+                            <h1 class="articleTitle">Beyond Prayers</h1>
+                            <h3 class="datePublished">Date: %datePublished%</h3>
                         </hgroup>
                     </header>
-                    <section>
+                    <section class="article_content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Tristique risus nec feugiat in. Erat velit scelerisque in dictum non consectetur a. 
@@ -69,7 +70,7 @@
                                         etiam dignissim diam quis enim lobortis.</p>
                         
                     </section>
-                    <footer>By: One Piece</footer>
+                    <footer class="article_footers">By: One Piece</footer>
                 </article>
             </div>
         </section>
@@ -102,9 +103,36 @@
                 </div>
             </div>
         </section>
+
     </main>
     <footer class="page_footer">
-        <p>Copyright &copy; 2019. Bountiful Children's Foundation. All Rights Reserved</p>
+        <section class="footer_content">
+            <div class="siteMap">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <a class="buttons backToTop" href="#top">BACK TO TOP</a>
+            <div class="contactInfo">
+                <p>Contact Us</p>
+                <address>
+                    Bountiful Children's Foundation <br/>
+                    123 Army Highway <br/>
+                    Bloomington IN 
+                </address>
+                <p>Email: <a href="mailto:general@bountiful.org">General Inquiries</a></p>
+                <p>Telephone: <a href="tel:(888)123-4567">1(888)123-4567</a></p>
+            </div>
+            <div class="footer_sm">
+                <p>Follow Us At:</p>
+                <p></p>
+            </div> 
+
+        </section>
+        <p class="copyright"> Copyright &copy; 2019. Bountiful Children's Foundation. All Rights Reserved</p>
     </footer>
 </body>
 </html>
