@@ -42,7 +42,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -173,6 +172,7 @@ line-height: 1.4;
 .containerHome {
 width: 100%;
 margin: 0 auto;
+
 }
 @media (min-width: 800px){
     .containerHome{
@@ -215,16 +215,55 @@ padding-top: 15px;
     text-decoration: none;
     color: black;
 }
+
 /* top content */
-.topContent .img{
-    border-radius: 5px;
-    max-width:100%;
+.topContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.big{
+    border-radius: 10px;
+    max-width: 100%;
+    padding-bottom: 20px;
 }
 .topContent .h2{
-        padding: 15px;
+    padding: 15px;
 }
 .topContent p{
-        padding: 0 15px;
+    padding: 0 15px;
+}
+.btn {
+    background-color: #22283A;
+    color: #F6F7F8;
+    padding: 30px;
+    text-align: center;
+    font-size: large;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.3s;
+    max-width: 100%;
+    cursor: pointer;
+    box-shadow: 0 3px #999;
+    animation: bounceIn 2s;
+    margin: 5px;
+}
+@media (max-width: 1000px) {
+    .btn {
+        width: 30%;
+        padding: 8px 15px;
+        border-radius: 8px;
+    }
+}
+.btn:hover {
+background-color: #F6F7F8;
+color: #22283A;
+box-shadow: black;
+}
+.btn:active {
+background-color: #ffffff;
+box-shadow: 0 1px #070707;
+transform: translateY(3px);
 }
 .kids-images{
     display: flex;
@@ -233,9 +272,8 @@ padding-top: 15px;
 }
 .kids-images img{
     max-width: 100%;
-    margin: 20px 2.5%;
     border-radius: 20px;
-    height: 100%;
+    padding: 10px 0px;
 }
 @media (min-width: 800px) {
     .kids-images .img{
@@ -243,13 +281,20 @@ padding-top: 15px;
     }
 }
 .Families{
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .Families h3{
     margin-top: 11px;
 }
 .Families p{
     margin-top: 13px;
+}
+.Families img{
+    max-width: 100%;
+    border-radius: 10px;
 }
 .walk{
     flex-direction: column-reverse;
@@ -258,13 +303,24 @@ padding-top: 15px;
     margin: 20px 0px;
     display: flex;
     justify-content: center;
+    align-content: center;
     border-top: 1px solid #dee2e6
+}
+.walk .walk-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 @media (min-width: 1000px) {
     .walk{
         margin-top: 60px;
         padding: 50px 60px
     }
+}
+.walk img{
+    max-width: 100%;
+    border-radius: 10px
 }
 /* Footer */
 footer {
