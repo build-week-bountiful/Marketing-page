@@ -435,9 +435,12 @@ p{
 /* contact page css */
 .Contact {
     box-sizing: border-box;
-    margin-top: 15%;
-    margin-right: 3%;
+    /* margin-top: 15%; */
     max-height: 100%;
+    margin: 15% 0
+}
+@media (min-width:800px) {
+    margin-right: 3%;
 }
 h2{
     color: #ff8000;
@@ -452,7 +455,7 @@ input[type=text], select, textarea {
     resize: vertical;
   }
   
-  input[type=submit] {
+input[type=submit] {
     background-color: #8083C2;
     color: white;
     padding: 12px 20px;
@@ -461,7 +464,7 @@ input[type=text], select, textarea {
   }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #390A78;
   }
 
   /*container/contact section */
@@ -475,9 +478,19 @@ input[type=submit]:hover {
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
-.column, input[type=submit] {
+.column .column2 {
+    width: 80%;
+}
+.column input[type=submit] {
     width: 100%;
-    margin-top: 0;
+}
+.column img {
+    position: absolute;
+    top:70%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 800px) {
@@ -488,7 +501,7 @@ input[type=submit]:hover {
     margin-top: 6px;
     padding: 20px;
 }
-  
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -496,12 +509,15 @@ input[type=submit]:hover {
     clear: both;
   }
 }
-.column img{
-    max-width: 40%;
-    position: absolute;
-    left: 10%;
-
+@media (min-width: 800 px){
+    .column img{
+        max-width: 40%;
+        position: absolute;
+        left: 10%;
+    
+    }
 }
+
 .support{
     text-align: center;
 }
