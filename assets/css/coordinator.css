@@ -410,3 +410,8 @@ footer {
 img{
     border:#ff8000 solid 2px;
 }
+@media(min-width:1000px){
+    img{
+        scale: -.5;
+    }
+}
