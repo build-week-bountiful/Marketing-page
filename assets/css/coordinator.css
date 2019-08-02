@@ -1,0 +1,412 @@
+/* animation for buttons */
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol,
+ul {
+list-style: none;
+}
+blockquote,
+q {
+quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+* {
+box-sizing: border-box;
+}
+html {
+font-size: 62.5%;
+}
+html,
+body {
+font-family: 'Ubuntu', sans-serif;
+background:#031422;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #23293B;
+}
+h2 {
+font-size: 3.2rem;
+}
+h3 {
+font-size: 2.8rem;
+}
+p {
+font-size: 1.6rem;
+line-height: 1.4;
+}
+
+/* container */
+.containerHome {
+width: 100%;
+margin: 0 auto;
+background: #031422;
+border-radius: 10px;
+}
+    /* tablet */
+@media (min-width: 800px){
+    .containerHome{
+        max-width: 95%;
+    }
+}
+    /* desktop */
+@media (min-width:1000px){
+    .containerHome{
+        max-width: 90%;
+    }
+}
+/* nav bar */
+.navBar {
+padding-bottom: 1.5rem;
+max-width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background:#031422;
+
+}
+.navBar h1 {
+font-size: xx-large;
+padding-bottom: 15px;
+padding-top: 15px;
+color: #ff8000;
+}
+.navBar nav {
+    width: 100%;
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    /* tablet */
+@media (min-width:800px) {
+    .navBar nav{
+        max-width: 100%;
+    }
+}
+    /* desktop */
+@media (min-width: 1000px) {
+    .navBar nav {
+        width: 80%;
+    }
+}
+.navBar nav a {
+    text-decoration: none;
+    color: #8083C2;
+}
+
+/* top content */
+.topContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+}
+.big{
+    border-radius: 10px;
+    max-width: 100%;
+}
+.topContent h2{
+    padding: 20px 0px;
+    color:#ffffff;
+}
+.topContent p{
+    padding: 0 15px;
+}
+.btn {
+    background-color:#8083C2;
+    color: #390A78;
+    padding: 30px;
+    text-align: center;
+    font-size: large;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.3s;
+    max-width: 100%;
+    cursor: pointer;
+    box-shadow: 0 3px #031422;
+    animation: bounceIn 2s;
+    margin: 5px;
+}
+@media (max-width: 1000px) {
+    .btn {
+        width: 30%;
+        padding: 8px 15px;
+        border-radius: 8px;
+    }
+}
+.btn:hover {
+background-color: #390A78;
+color: #8083C2;
+box-shadow: white;
+}
+.btn:active {
+background-color: #ffffff;
+box-shadow: 0 1px #070707;
+transform: translateY(3px);
+}
+.kids-images{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.kids-images img{
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 10px 0px;
+    border: #ff8000 solid 2px;
+}
+@media (min-width: 800px) {
+    .kids-images .img{
+        width: 50%;
+        padding: 5px;
+    }
+}
+@media (min-width: 1000px){
+    .kids-images .img {
+        max-width: 50%;
+        border: #070707;
+        border-radius: 20px;
+    }
+}
+.Families{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Families .famOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.Families .famTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff
+}
+@media (min-width:1000px){
+    .Families {
+        flex-direction: row;
+    }
+}
+.Families h3{
+    margin-top: 11px;
+    color:#ffffff;
+}
+.Families p{
+    margin-top: 13px;
+}
+.Families img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+@media (min-width:1000px){
+    .Families .famOne{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 50%;
+        padding:5px;
+    }
+}
+@media (min-width:1000px){
+    .Families .famTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 50%;
+        padding:5px;
+    }
+}
+
+.walk{
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding: 0px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid #dee2e6
+}
+.walk .walk-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:1000px){
+    .walk .walk-text {
+        flex-direction: row;
+    }
+}
+@media(min-width:1000px){
+    .walk-text .btn{
+        width:35%;
+    }
+}
+@media (min-width: 1000px) {
+    .walk{
+        margin-top: 60px;
+        padding: 50px 0px;
+    }
+}
+.walk img{
+    max-width: 100%;
+    border-radius: 10px
+}
+/* Footer */
+footer {
+    color: #ffffff;
+    background:#031422;
+    padding: 20px 0;
+    border: 1px double #031422;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    border:#ff8000 solid 2px;
+}
