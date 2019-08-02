@@ -435,7 +435,12 @@ p{
 /* contact page css */
 .Contact {
     box-sizing: border-box;
-    background-image: 
+    margin-top: 15%;
+    margin-right: 3%;
+    max-height: 100%;
+}
+h2{
+    color: #ff8000;
 }
 /* Style inputs */ 
 input[type=text], select, textarea {
@@ -448,7 +453,7 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #8083C2;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -491,12 +496,18 @@ input[type=submit]:hover {
     clear: both;
   }
 }
-.subject {
-    height: 20%;
-}
 .column img{
-    width:50%%;
+    max-width: 40%;
+    position: absolute;
+    left: 10%;
+
 }
 .support{
     text-align: center;
+}
+label[for=who] {
+    color:#8083C2;
+}
+label[for=subject] {
+    color:#8083C2;
 }
