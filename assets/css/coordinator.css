@@ -509,12 +509,13 @@ input[type=submit]:hover {
     clear: both;
   }
 }
-@media (min-width: 800 px){
+@media (min-width: 800px){
     .column img{
         max-width: 40%;
         position: absolute;
         left: 10%;
-    
+        top:28%;
+        max-height: 30%;
     }
 }
 
