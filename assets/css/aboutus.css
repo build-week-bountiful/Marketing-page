@@ -5,6 +5,11 @@
     background: #320D6D;
     width: 20%;
 }
+@media only screen and (max-width: 500px){
+    .sidebar {
+        display:none;
+    }
+}
 .sidebar ul {
     list-style-type: none;
     width: 100%;
@@ -35,8 +40,20 @@
     padding-left: 3%;
     width: 75%;
 }
+@media only screen and (max-width: 500px){
+    .main_content {
+        padding-left: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .main_content h2 {
+        text-align: center;
+    }
+}
+
 .team {
-    width: 85%;
+    width: 100%;
     
 }
 
@@ -44,11 +61,35 @@
     display: flex;
     margin: 20px 0;
 }
+@media only screen and (max-width: 800px){
+    .rows {
+        width: 85%;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+    
+}
 
 .boxes.photo {
     width: 20%;
 }
 
+@media only screen and (max-width: 800px){
+    .boxes.photo {
+        width: 100%;
+        margin: 2% 0;
+    }
+}
+
+.boxes.photo img {
+    width: 100%;
+}
 .boxes.description {
     width: 75%;
+}
+@media only screen and (max-width: 800px){
+    .boxes.description{
+        width: 100%;
+        margin: 2% 0;
+    }
 }
