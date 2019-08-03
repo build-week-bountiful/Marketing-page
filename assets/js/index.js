@@ -1,9 +1,18 @@
 const photodirectory = "./assets/img/";
-const mainPageImgs = ["mother2.png", "beautifulchild.jpg"];
+const mainPageImgs = ["mother2.png", "bestfriends2.jpg", "poor_girl.png"];
 const countries = ['Bolivia',  'Brazil', 'Cambodia', 'Colombia', 'Ecuador', 'El Salvador', 
                    'Ghana', 'Guatemala', 'Haiti', 'Honduras', 'Kiribati', 'Madagascar', 'Mongolia',
                     'Nicaragua', 'Paraguay', 'Peru', 'Philippines', 'Sierra Leone', 'Zimbabwe'];
-
+let imgCounter = 0;
+let photoChngVar = "";
+class Country {
+    constructor(countryAttrs){
+        this.name = countryAttrs.name;
+        this.population = countryAttrs.name;
+        this.capital = countryAttrs.capital;
+        this.povertyPop = countryAttrs.povertyPop;
+    }
+}
 class Articles {
     constructor (artAttrs){
         this.heading = artAttrs.heading;
@@ -46,3 +55,13 @@ class Articles {
     };
 }
 
+function changePhoto() {
+    imgCounter++;
+   let newPageImg = document.querySelector('.pageImg');
+   console.log(newPageImg);
+   if (imgCounter >= mainPageImgs.length){
+       imgCounter = 0;
+       newPageImg.src = photodirectory + mainPageImgs[imgCounter];
+   }
+   else { newPageImg.src = photodirectory + mainPageImgs[imgCounter];}
+}
