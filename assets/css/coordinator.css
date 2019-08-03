@@ -440,8 +440,11 @@ p{
     margin: 15% 0
 }
 @media (min-width:800px) {
-    margin-right: 3%;
+    .Contact{
+        margin-right: 3%;
+    }
 }
+    
 h2{
     color: #ff8000;
 }
