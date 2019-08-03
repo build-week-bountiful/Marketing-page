@@ -155,7 +155,7 @@ strong {
     display: flex;   
 }
 .site_nav div {
-    width: 60%;
+    width: 30%;
 }
 
 
@@ -166,14 +166,14 @@ strong {
 }
 .site_nav ul {
     display: flex;
-    width: 40%;
+    width: 100%;
     justify-content: space-evenly;
     padding: 1%;
     list-style-type: none;
 }
 @media only screen and (min-width:501px) and (max-width:800px){
     .site_nav ul {
-        width:85%;
+        
         justify-content: space-around;
     }
 }
