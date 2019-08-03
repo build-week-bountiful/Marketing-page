@@ -126,7 +126,7 @@ strong {
     }
 }
 .login_btns .buttons {
-    width: 30%;
+    height: 20%;
     padding: 2%;
     margin: 10px 2%;
     color: #FF7400;
@@ -146,15 +146,6 @@ strong {
     color: #FFFFFF;
     background: #FF7400;
 }
-
-@media only screen and (max-width: 500px) {
-    .login_btns .buttons {
-        width: 30%;
-        
-    }
-}
-
-
 
 .site_nav{
     
