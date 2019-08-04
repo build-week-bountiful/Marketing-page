@@ -78,7 +78,11 @@ strong {
     }
 }
 
-
+@media only screen and (max-width: 500px){
+    .site_logo {
+        justify-content: center;
+    }
+}
 
 .site_logo h1 {
     font-size: 4rem;
@@ -110,6 +114,7 @@ strong {
  @media only screen and (max-width: 500px){
      .login_btns {
          width: 75%;
+         
       }
  }
 .login_btns p{
