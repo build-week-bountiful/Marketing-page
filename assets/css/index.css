@@ -109,7 +109,6 @@ strong {
  }
  @media only screen and (max-width: 500px){
      .login_btns {
-         width: 75%;
          margin: 0 auto;
          padding: 0 2%;
       }
